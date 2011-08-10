@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lifecycleMappingMetadata>
+  <pluginExecutions>
+    <pluginExecution>
+      <pluginExecutionFilter>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <versionRange>[1.8,)</versionRange>
+        <goals>
+          <goal>wsimport</goal>
+        </goals>
+      </pluginExecutionFilter>
+      <action>
+        <configurator>
+          <id>com.googlecode.m2e.connectors.jaxws.jaxwsConfigurator</id>
+        </configurator>
+      </action>
+    </pluginExecution>
+  </pluginExecutions>
+</lifecycleMappingMetadata>
