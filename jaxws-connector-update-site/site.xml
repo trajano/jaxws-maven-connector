@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.googlecode.m2e.connectors.jaxws.feature_1.0.0.20110810.jar" id="com.googlecode.m2e.connectors.jaxws.feature" version="1.0.0.20110810"/>
+   <feature url="features/com.googlecode.m2e.connectors.jaxws.feature_1.0.0.20110922.jar" id="com.googlecode.m2e.connectors.jaxws.feature" version="1.0.0.20110922"/>
 </site>

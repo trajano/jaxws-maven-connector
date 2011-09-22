@@ -2,7 +2,7 @@
 <feature
       id="com.googlecode.m2e.connectors.jaxws.feature"
       label="m2e connector for jaxws"
-      version="1.0.0.20110810"
+      version="1.0.0.20110922"
       provider-name="Callista Enterprise AB">
 
    <description>
@@ -22,11 +22,22 @@
       http://www.eclipse.org/legal/epl-v10.html
    </license>
 
+   <requires>
+      <import feature="org.apache.commons.lang"/>
+   </requires>
+
    <plugin
          id="com.googlecode.m2e.connectors.jaxws"
          download-size="0"
          install-size="0"
          version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.lang"
+         download-size="0"
+         install-size="0"
+         version="2.4.0.v201005080502"
          unpack="false"/>
 
 </feature>
