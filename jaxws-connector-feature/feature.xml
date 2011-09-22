@@ -23,7 +23,7 @@
    </license>
 
    <requires>
-      <import feature="org.apache.commons.lang"/>
+      <import plugin="org.apache.commons.lang"/>
    </requires>
 
    <plugin
