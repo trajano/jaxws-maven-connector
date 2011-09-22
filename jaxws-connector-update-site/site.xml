@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.googlecode.m2e.connectors.jaxws.feature_1.0.0.20110922.jar" id="com.googlecode.m2e.connectors.jaxws.feature" version="1.0.0.20110922"/>
+   <feature url="features/com.googlecode.m2e.connectors.jaxws.feature_1.0.0.20110922.jar" id="com.googlecode.m2e.connectors.jaxws.feature" version="1.0.0.20110922">
+      <category name="m2eclipse connectors"/>
+   </feature>
+   <category-def name="m2eclipse connectors" label="New Category 1"/>
 </site>
