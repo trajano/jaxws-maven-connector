@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
+   <description name="jaxws m2e connector" url="http://jaxws-maven-connector.googlecode.com/svn/trunk/jaxws-connector-update-site/">
+      jaxws m2e connector update site
+   </description>
    <feature url="features/com.googlecode.m2e.connectors.jaxws.feature_1.0.0.20110922.jar" id="com.googlecode.m2e.connectors.jaxws.feature" version="1.0.0.20110922">
       <category name="m2e connectors"/>
    </feature>
