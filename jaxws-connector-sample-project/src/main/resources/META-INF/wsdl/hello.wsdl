@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="hello" targetNamespace="http://www.example.org/hello/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.example.org/hello/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:types><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/hello/">
+	<xsd:element name="sayHello">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="in" type="xsd:string"></xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="sayHelloResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="out" type="xsd:string"></xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element></xsd:schema></wsdl:types>
+    <wsdl:message name="sayHelloRequest">
+    	<wsdl:part name="parameters" element="tns:sayHello"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="sayHelloResponse">
+    	<wsdl:part name="parameters" element="tns:sayHelloResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="Hello">
+    	<wsdl:operation name="sayHello">
+    		<wsdl:input message="tns:sayHelloRequest"></wsdl:input>
+    		<wsdl:output message="tns:sayHelloResponse"></wsdl:output>
+    	</wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="NewBinding" type="tns:Hello">
+    	<soap:binding style="document"
+    		transport="http://schemas.xmlsoap.org/soap/http" />
+    	<wsdl:operation name="sayHello">
+    		<soap:operation
+    			soapAction="http://www.example.org/hello/sayHello" />
+    		<wsdl:input>
+    			<soap:body use="literal" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="literal" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="HelloService">
+		<wsdl:port name="HelloPort" binding="tns:NewBinding">
+			<soap:address location="http://www.example.org/" />
+		</wsdl:port>
+	</wsdl:service></wsdl:definitions>
