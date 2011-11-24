@@ -15,7 +15,6 @@ import org.apache.maven.plugin.MojoExecution;
 import org.codehaus.plexus.util.Scanner;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.m2e.core.MavenPlugin;
 import org.eclipse.m2e.core.embedder.IMaven;
 import org.eclipse.m2e.core.project.configurator.MojoExecutionBuildParticipant;
