@@ -18,5 +18,8 @@
    <feature url="features/com.googlecode.m2e.connectors.jaxws.feature_1.0.4.20111123.jar" id="com.googlecode.m2e.connectors.jaxws.feature" version="1.0.4.20111123">
       <category name="m2e connectors"/>
    </feature>
+   <feature url="features/com.googlecode.m2e.connectors.jaxws.feature_1.0.4.20130919.jar" id="com.googlecode.m2e.connectors.jaxws.feature" version="1.0.4.20130919">
+      <category name="m2e connectors"/>
+   </feature>
    <category-def name="m2e connectors" label="m2e connectors"/>
 </site>
