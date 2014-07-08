@@ -2,7 +2,7 @@
 <feature
       id="com.googlecode.m2e.connectors.jaxws.feature"
       label="m2e connector for jaxws"
-      version="1.0.4.20130919"
+      version="1.0.4.20140708"
       provider-name="Callista Enterprise AB">
 
    <description>
@@ -30,7 +30,7 @@
          id="com.googlecode.m2e.connectors.jaxws"
          download-size="0"
          install-size="0"
-         version="1.0.4.20130919"
+         version="1.0.4.20140708"
          unpack="false"/>
 
 </feature>
