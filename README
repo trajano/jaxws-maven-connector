@@ -1,2 +1,13 @@
 Update site to use to get the files is:
 https://raw.github.com/trajano/jaxws-maven-connector/master/jaxws-connector-update-site/
+
+It is recommended that instead of using this M2E connector to use the M2E
+enabled version of the jaxws-maven-plugin.  http://site.trajano.net/jaxws-maven-plugin/
+
+The dependency can be added at:
+
+    <dependency>
+        <groupId>net.trajano.mojo</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <version>2.3.1</version>
+    </dependency>
